@@ -2,9 +2,12 @@ import styles from './HeroStyles.module.css';
 import HeroImg from '../../assets/hero-img.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
-import twitterIcon from '../../assets/twitter-light.svg';
-import githubIcon from '../../assets/github-light.svg';
-import linkedinIcon from '../../assets/linkedin-light.svg';
+import twitterLight from '../../assets/twitter-light.svg';
+import twitterDark from '../../assets/twitter-dark.svg';
+import githubLight from '../../assets/github-light.svg';
+import linkedinLight from '../../assets/linkedin-light.svg';
+import githubDark from '../../assets/github-Dark.svg';
+import linkedinDark from '../../assets/linkedin-Dark.svg';
 import CV from '../../assets/cv.pdf'; 
 import { UseTheme } from '../../common/ThemeContext.jsx'; // Import the theme context
 
@@ -13,6 +16,9 @@ function Hero() {
     const { theme, toggleTheme }  = UseTheme(); // Get the current theme from the context
 
     const themeIcon = theme === 'light' ? sun : moon;  
+    const twitterIcon = theme === 'light' ? twitterLight : twitterDark;  
+    const githubIcon = theme === 'light' ? githubLight : githubDark;
+    const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
 
     return (
         <section id="hero" className={styles.container}>
