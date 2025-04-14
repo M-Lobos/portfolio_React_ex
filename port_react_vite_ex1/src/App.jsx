@@ -1,11 +1,13 @@
-
+/* Remember that jsx its a combination of HTML and Js */
 import './App.css'
+import Hero from './section/Hero/Hero.jsx'
 
 function App() {
 
   return (
+    console.log("testting the console log"),
     <>
-      <h1>Vite + React</h1>
+      <Hero />
     </>
   )
 }
