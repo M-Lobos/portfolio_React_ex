@@ -20,24 +20,33 @@
     a:hover {
         transform: scale(1.05);
     }
+}
 
-    .projectsContainer {
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+
+    a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        gap: 30px;
+        gap: 15px;
 
-        a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-
-            p {
-                max-width: 22ch;
-            }
+        p {
+            max-width: 22ch;
         }
     }
+}
 
+
+@media (width>=800px) {
+    .projectsContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 30px;
+    }
 }

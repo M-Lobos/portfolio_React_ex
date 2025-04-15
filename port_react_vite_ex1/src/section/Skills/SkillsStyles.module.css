@@ -13,12 +13,12 @@
 
     img {
         width: 20px;
+        margin-left: 20px;
     }
 }
 
 .skillList {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-self: center;
     flex-wrap: wrap;
@@ -32,4 +32,20 @@ hr {
     border: none;
     background-color: var(--text-color);
     margin: 30px auto;
+}
+
+@media (width>=800px) {
+    .skillList {
+        max-width: fit-content;
+        gap: 30px;
+
+        p {
+            font-size: 20px;
+
+        }
+    }
+
+    hr {
+        width: 300px;
+    }
 }
