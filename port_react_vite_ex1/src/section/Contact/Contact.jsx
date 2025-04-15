@@ -46,10 +46,10 @@ function Contact() {
                 ></textarea>
             </div>
 
-            <input className="hover btn" type="submit" value="submit"/>
+            <input className="hover btn" type="submit" value="Submit"/>
         </form>
     </section>
-    )
+    );
 }
 
 export default Contact
