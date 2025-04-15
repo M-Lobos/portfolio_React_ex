@@ -14,7 +14,6 @@ import { UseTheme } from '../../common/ThemeContext.jsx'; // Import the theme co
 function Hero() {
 
     const { theme, toggleTheme }  = UseTheme(); // Get the current theme from the context
-
     const themeIcon = theme === 'light' ? sun : moon;  
     const twitterIcon = theme === 'light' ? twitterLight : twitterDark;  
     const githubIcon = theme === 'light' ? githubLight : githubDark;
@@ -29,7 +28,7 @@ function Hero() {
                     alt="Web Dev profile p" 
                 />
                 <img
-                    className={styles.ColorMode}
+                    className={styles.colorMode}
                     src={themeIcon} 
                     alt="Color mode icon" 
                     onClick={toggleTheme} // Toggle theme on click
@@ -59,7 +58,7 @@ function Hero() {
                         target='_blank'>
                         <img src={linkedinIcon} alt="Linkedin icon" />    
                     </a>
-                    <p>With a passion for developing modern React apps for commercial businesess</p>
+                    <p className={styles.description}>With a passion for developing modern React apps for commercial businesess</p>
                     <a href={CV} download >
                         <button className='hover' >
                             Resume
